@@ -1,6 +1,10 @@
 # play-cal-site
 
-Marketing site for **Family Hub** — the parent-to-parent playdate-coordination app.
+Marketing site for **PlayCal**, the parent-to-parent playdate-coordination app.
+
+Brand: "Meet-up" identity (brand package v1). Colors and fonts live in
+`src/app/globals.css` and `src/app/layout.tsx`; the mark is in
+`src/components/brand.tsx`.
 
 Live at [play-cal.com](https://play-cal.com).
 

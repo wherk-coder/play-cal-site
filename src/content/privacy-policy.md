@@ -5,7 +5,7 @@
 
 ## 1. Introduction
 
-Welcome to FamilyHub, operated by Wherk LLC ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (collectively, the "Service").
+Welcome to Play-Cal, operated by Wherk LLC ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (collectively, the "Service").
 
 We are committed to protecting your privacy and the privacy of your children. This Privacy Policy is designed to comply with the Children's Online Privacy Protection Act ("COPPA"), the General Data Protection Regulation ("GDPR"), the California Consumer Privacy Act ("CCPA"), and other applicable privacy laws.
 
@@ -100,7 +100,7 @@ We use collected information for the following purposes:
 
 ## 4. Children's Privacy and COPPA Compliance
 
-FamilyHub is designed for use by parents and guardians. **Children under 13 are not permitted to create accounts or use the Service independently.**
+Play-Cal is designed for use by parents and guardians. **Children under 13 are not permitted to create accounts or use the Service independently.**
 
 ### 4.1 Parental Consent
 
@@ -142,7 +142,7 @@ Parents have the right to:
 - Refuse to allow further collection or use of their children's information
 - Withdraw consent at any time
 
-To exercise these rights, contact us at support@play-cal.com.
+To exercise these rights, contact us at support@play-cal.com. You can also delete your children's information yourself at any time by deleting your account in the app (Profile, then Delete account).
 
 ### 4.5 Data Retention for Children
 
@@ -167,7 +167,7 @@ These providers are contractually obligated to protect your information and use 
 
 ### 5.2 With Other Users
 
-When you use FamilyHub:
+When you use Play-Cal:
 
 - Your profile information (name, photo) is visible to users you connect with
 - Event invitations and RSVPs are shared with other event participants
@@ -244,7 +244,9 @@ California residents have the right to:
 
 ### 7.4 How to Exercise Your Rights
 
-To exercise any of these rights, contact us at support@play-cal.com. We will respond within:
+You can delete your account and associated data yourself at any time in the app: Profile, then Delete account. Deletion is immediate and permanent.
+
+To exercise any other right, contact us at support@play-cal.com. We will respond within:
 
 - 30 days for general requests
 - 45 days for CCPA requests (with possible 45-day extension)
@@ -258,11 +260,11 @@ We retain your information for as long as:
 - Needed to provide the Service
 - Required by law or for legitimate business purposes
 
-Upon account deletion:
+Upon account deletion (in the app: Profile, then Delete account):
 
-- Most personal information is deleted within 30 days
+- Your profile and photos, your children and their availability, your connections and requests, and your playdates and messages are deleted immediately, and other parents no longer see you or your children
 - Some information may be retained for legal compliance (e.g., transaction records)
-- Anonymized data may be retained indefinitely for analytics
+- Anonymized usage events (no longer linked to you) may be retained for analytics
 
 ## 9. International Data Transfers
 
