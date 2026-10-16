@@ -1,6 +1,6 @@
 # play-cal-site
 
-Marketing site for **PlayCal**, the parent-to-parent playdate-coordination app.
+Marketing site for **Play Cal**, the parent-to-parent playdate-coordination app.
 
 Brand: "Meet-up" identity (brand package v1). Colors and fonts live in
 `src/app/globals.css` and `src/app/layout.tsx`; the mark is in

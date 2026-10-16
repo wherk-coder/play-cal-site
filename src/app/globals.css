@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* PlayCal "Meet-up" identity. Ink, Pool, Coral and Sun come from brand
+/* Play Cal "Meet-up" identity. Ink, Pool, Coral and Sun come from brand
    package v1; the rest are neutrals and text-safe tints derived from them.
    Coral and Sun are graphic colors only, never body text. */
 :root {

@@ -1,8 +1,8 @@
-// PlayCal "Meet-up" identity (brand package v1, Oct 2026). Two offset
+// Play Cal "Meet-up" identity (brand package v1, Oct 2026). Two offset
 // schedule pills with a ball where they overlap. Geometry is copied from the
 // master SVGs; don't redraw or recolor individual pieces.
 
-export const BRAND_NAME = "PlayCal";
+export const BRAND_NAME = "Play Cal";
 
 const PILL_LEFT =
   "M12 23A15 15 0 0 1 42 23L42 30.04A21.5 21.5 0 0 0 33.943 64.298A15 15 0 0 1 12 51Z";

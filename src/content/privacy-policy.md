@@ -5,7 +5,7 @@
 
 ## 1. Introduction
 
-Welcome to Play-Cal, operated by Wherk LLC ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (collectively, the "Service").
+Welcome to Play Cal, operated by Wherk LLC ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (collectively, the "Service").
 
 We are committed to protecting your privacy and the privacy of your children. This Privacy Policy is designed to comply with the Children's Online Privacy Protection Act ("COPPA"), the General Data Protection Regulation ("GDPR"), the California Consumer Privacy Act ("CCPA"), and other applicable privacy laws.
 
@@ -100,7 +100,7 @@ We use collected information for the following purposes:
 
 ## 4. Children's Privacy and COPPA Compliance
 
-Play-Cal is designed for use by parents and guardians. **Children under 13 are not permitted to create accounts or use the Service independently.**
+Play Cal is designed for use by parents and guardians. **Children under 13 are not permitted to create accounts or use the Service independently.**
 
 ### 4.1 Parental Consent
 
@@ -167,7 +167,7 @@ These providers are contractually obligated to protect your information and use 
 
 ### 5.2 With Other Users
 
-When you use Play-Cal:
+When you use Play Cal:
 
 - Your profile information (name, photo) is visible to users you connect with
 - Event invitations and RSVPs are shared with other event participants

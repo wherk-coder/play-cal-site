@@ -36,6 +36,7 @@ export const metadata: Metadata = {
   applicationName: BRAND_NAME,
   keywords: [
     BRAND_NAME,
+    "PlayCal",
     "Play-Cal",
     "playdate app",
     "kids calendar",
