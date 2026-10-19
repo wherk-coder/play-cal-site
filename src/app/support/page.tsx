@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    `Get help with ${BRAND_NAME}. Contact support, sign in, delete your account, or report another user.`,
+    `Get help with ${BRAND_NAME}. Contact support, sign in, invite a parent, delete your account, or report another user.`,
   alternates: { canonical: "/support" },
 };
 
@@ -24,17 +24,17 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "How do I report another user?",
     answer:
-      "On any user profile, tap the menu icon (three dots) in the top right and choose “Report”. Tell us briefly what happened. We review every report within 24 hours and take action — temporary suspension, permanent ban, or law enforcement contact — based on what we find. Reports are confidential.",
+      "Email support@play-cal.com with the parent’s name and what happened. Reports are confidential, and we act on what we find, up to removing the account or contacting law enforcement. To stop sharing with someone straight away, open Profile, then Friends & connections, tap their name and choose Remove connection: they immediately lose access to your children and availability.",
   },
   {
     question: "Why isn’t my friend showing up in search?",
     answer:
-      `${BRAND_NAME} doesn’t have an open user search by design — it’s a kid-context app, so we keep it invite-only. Ask your friend to send you a connection link from the app (Settings → Invite a parent), or share your own link with them.`,
+      `${BRAND_NAME} has no open search on purpose: it’s invite-only, so only parents you know can find you. Open Profile, then Friends & connections, tap Invite a parent and send your friend the link or code. They enter it under Enter invite code, and you approve them and choose which children to share.`,
   },
   {
     question: `Is ${BRAND_NAME} free?`,
     answer:
-      "The core app — calendar, playdates, parties, and parent messaging — is free. We may add optional paid features later (like premium themes or a household plan), but the basics will always be free.",
+      "Yes. Availability, playdate requests, adding playdates to your calendar and parent messaging are free. We may add optional paid features later, but the basics will stay free.",
   },
   {
     question: "What about my kids’ data?",
