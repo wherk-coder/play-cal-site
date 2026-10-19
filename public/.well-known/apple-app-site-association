@@ -1,9 +1,10 @@
 {
   "applinks": {
-    "apps": [],
-    "details": []
-  },
-  "webcredentials": {
-    "apps": []
+    "details": [
+      {
+        "appIDs": ["SFMXA825X4.com.playcal.app"],
+        "components": [{ "/": "/i/*" }]
+      }
+    ]
   }
 }

@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective Date:** February 14, 2026  
+**Effective Date:** October 17, 2026  
 **Last Updated:** February 14, 2026
 
 ## 1. Agreement to Terms
@@ -175,7 +175,7 @@ While we maintain regular backups, you are responsible for maintaining your own 
 
 Play Cal integrates with third-party services including:
 
-- **Authentication:** Clerk, Google OAuth, Apple Sign-In
+- **Authentication:** Supabase Auth (one-time codes sent to your email)
 - **Calendar Services:** Google Calendar, Microsoft Outlook, Apple Calendar
 - **Email Parsing:** SendGrid, Evite, Paperless Post
 - **Infrastructure:** Supabase, Expo
