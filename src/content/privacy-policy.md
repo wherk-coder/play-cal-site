@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** February 14, 2026  
+**Effective Date:** October 17, 2026  
 **Last Updated:** February 14, 2026
 
 ## 1. Introduction
@@ -23,7 +23,7 @@ Please read this Privacy Policy carefully. By using the Service, you agree to th
 
 - Name, email address, phone number
 - Profile photo (optional)
-- Password (encrypted via Clerk authentication service)
+- One-time sign-in codes sent to your email (we do not use or store passwords)
 - Payment information (processed by third-party payment processors)
 
 **Family and Children Information:**
@@ -62,7 +62,6 @@ Please read this Privacy Policy carefully. By using the Service, you agree to th
 
 We may receive information from:
 
-- **Clerk:** Authentication and user management data
 - **Google, Apple, Microsoft:** Calendar data and OAuth profile information
 - **SendGrid:** Email parsing data from Evite and Paperless Post
 - **Payment Processors:** Subscription status and payment verification
@@ -156,8 +155,7 @@ We do not sell your personal information. We may share information in the follow
 
 We share information with trusted third-party service providers:
 
-- **Clerk:** Authentication and user management
-- **Supabase:** Database hosting and storage
+- **Supabase:** Sign-in (authentication), database hosting and storage
 - **Google, Apple, Microsoft:** Calendar synchronization
 - **SendGrid:** Email parsing and delivery
 - **Expo:** Push notification delivery
@@ -192,7 +190,7 @@ If Wherk LLC is involved in a merger, acquisition, or sale of assets, your infor
 We implement industry-standard security measures to protect your information:
 
 - **Encryption:** Data is encrypted in transit (TLS/SSL) and at rest
-- **Authentication:** Secure authentication via Clerk with OAuth support
+- **Authentication:** Sign-in with one-time codes sent to your email, through Supabase Auth
 - **Access Controls:** Limited access to personal information on a need-to-know basis
 - **Regular Audits:** Periodic security assessments and updates
 
