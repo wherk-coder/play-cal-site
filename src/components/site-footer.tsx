@@ -1,12 +1,13 @@
 import Link from "next/link";
+import { BrandLockup } from "@/components/brand";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
     <footer className="border-t border-border bg-subtle">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
-        <div className="space-y-1">
-          <p className="font-medium text-foreground">Family Hub</p>
+        <div className="space-y-2">
+          <BrandLockup />
           <p>
             &copy; {year} Wherk LLC. Made for parents, with patience.
           </p>

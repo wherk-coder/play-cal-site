@@ -5,7 +5,7 @@
 
 ## 1. Agreement to Terms
 
-Welcome to FamilyHub! These Terms of Service ("Terms") constitute a legally binding agreement between you and Wherk LLC ("we," "us," or "our") governing your use of the FamilyHub mobile application and related services (collectively, the "Service").
+Welcome to Play Cal! These Terms of Service ("Terms") constitute a legally binding agreement between you and Wherk LLC ("we," "us," or "our") governing your use of the Play Cal mobile application and related services (collectively, the "Service").
 
 By accessing or using the Service, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use the Service.
 
@@ -17,7 +17,7 @@ Email: support@play-cal.com
 
 ### 2.1 Age Requirements
 
-You must be at least 18 years old to create an account and use the Service. FamilyHub is intended for use by adults (parents, guardians, and caregivers). Children under 13 are prohibited from creating accounts or using the Service independently.
+You must be at least 18 years old to create an account and use the Service. Play Cal is intended for use by adults (parents, guardians, and caregivers). Children under 13 are prohibited from creating accounts or using the Service independently.
 
 ### 2.2 Account Creation
 
@@ -47,7 +47,7 @@ By adding information about children to the Service, you represent and warrant t
 
 ### 3.1 Subscription Plans
 
-FamilyHub offers subscription-based access to premium features. Subscription details include:
+Play Cal offers subscription-based access to premium features. Subscription details include:
 
 - Monthly subscription plans ($5-10/month, subject to change)
 - Automatic renewal unless canceled
@@ -173,7 +173,7 @@ While we maintain regular backups, you are responsible for maintaining your own 
 
 ### 6.1 External Services
 
-FamilyHub integrates with third-party services including:
+Play Cal integrates with third-party services including:
 
 - **Authentication:** Clerk, Google OAuth, Apple Sign-In
 - **Calendar Services:** Google Calendar, Microsoft Outlook, Apple Calendar
@@ -273,7 +273,7 @@ THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIN
 
 ### 10.2 No Professional Advice
 
-FamilyHub is a scheduling and coordination tool. It does not provide:
+Play Cal is a scheduling and coordination tool. It does not provide:
 
 - Legal, medical, or professional advice
 - Childcare or supervision services
@@ -478,6 +478,6 @@ Email: legal@play-cal.com
 
 ---
 
-**Thank you for using FamilyHub. We're committed to helping families stay connected and organized.**
+**Thank you for using Play Cal. We're committed to helping families stay connected and organized.**
 
-**By using FamilyHub, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.**
+**By using Play Cal, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.**

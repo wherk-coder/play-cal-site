@@ -1,32 +1,44 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Play Cal "Meet-up" identity. Ink, Pool, Coral and Sun come from brand
+   package v1; the rest are neutrals and text-safe tints derived from them.
+   Coral and Sun are graphic colors only, never body text. */
 :root {
-  /* Warm, parent-friendly palette. Coral accent on a cream-tinted neutral
-     base — friendlier than pure white, still clean and editorial. */
-  --background: #fffaf5;
-  --foreground: #1f1b16;
-  --muted: #6b5f55;
-  --subtle: #fdf3ea;
-  --border: #ecddcc;
-  --accent: #e25c4d;
-  --accent-hover: #c64435;
-  --accent-soft: #ffe4dd;
-  --highlight: #f6b800;
+  --ink: #15233f;
+  --pool: #2f6bff;
+  --coral: #ff5b3a;
+  --sun: #ffc23d;
+
+  --background: #ffffff;
+  --foreground: var(--ink);
+  --muted: #4f5b73;
+  --subtle: #f4f6fa;
+  --border: #e2e7f0;
+  --accent: var(--pool);
+  /* Pool darkened to keep small text above 4.5:1 on white and --subtle. */
+  --accent-strong: #1f56e6;
+  --accent-soft: #e7eeff;
+  --ink-hover: #24365c;
 }
 
 @theme inline {
+  --color-ink: var(--ink);
+  --color-pool: var(--pool);
+  --color-coral: var(--coral);
+  --color-sun: var(--sun);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-subtle: var(--subtle);
   --color-border: var(--border);
   --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
+  --color-accent-strong: var(--accent-strong);
   --color-accent-soft: var(--accent-soft);
-  --color-highlight: var(--highlight);
+  --color-ink-hover: var(--ink-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-bricolage);
 }
 
 html {
@@ -45,7 +57,7 @@ body {
 
 ::selection {
   background: var(--accent-soft);
-  color: var(--accent-hover);
+  color: var(--ink);
 }
 
 /* Markdown rendering for /privacy and /terms — built on top of the
@@ -100,12 +112,12 @@ body {
   margin-bottom: 0.25rem;
 }
 .prose-legal a {
-  color: var(--accent);
+  color: var(--accent-strong);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 .prose-legal a:hover {
-  color: var(--accent-hover);
+  color: var(--ink);
 }
 .prose-legal strong {
   color: var(--foreground);

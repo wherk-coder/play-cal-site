@@ -18,7 +18,7 @@ export function LegalPage({
         <span aria-hidden="true">&larr;</span> Back to home
       </Link>
       <header className="mt-6 border-b border-border pb-6">
-        <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        <h1 className="font-display text-4xl font-extrabold tracking-[-0.03em] text-foreground sm:text-5xl">
           {title}
         </h1>
       </header>

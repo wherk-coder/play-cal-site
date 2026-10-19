@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AppIcon, BRAND_NAME } from "@/components/brand";
 
 export const dynamic = "force-static";
 
@@ -8,24 +9,28 @@ const features = [
     description:
       "See everyone's playdates, parties, and pickups in one place. No more scrolling through three different group chats to figure out who's free Saturday.",
     icon: CalendarIcon,
+    tile: "bg-pool text-white",
   },
   {
     title: "Party invitations that don't get lost",
     description:
       "Send a real invite — RSVPs, addresses, allergy notes, all in one tappable place. Parents can RSVP for the whole family in two taps.",
     icon: PartyIcon,
+    tile: "bg-coral text-white",
   },
   {
     title: "Kid availability windows",
     description:
       "Mark when your kids are open for playdates. Other parents see the green windows and reach out — no more endless \"how's tomorrow?\" texting.",
     icon: ClockIcon,
+    tile: "bg-sun text-ink",
   },
   {
     title: "Parent-to-parent messaging",
     description:
       "Quick, kid-context conversations between parents. Confirm a playdate, share a pickup, ask about pizza preferences — without exposing phone numbers.",
     icon: ChatIcon,
+    tile: "bg-ink text-white",
   },
 ];
 
@@ -38,7 +43,7 @@ const howItWorks = [
   {
     step: "02",
     title: "Connect with other parents",
-    body: "Find friends already on Family Hub or invite them with a single link. Connections are mutual — no awkward open searches.",
+    body: `Find friends already on ${BRAND_NAME} or invite them with a single link. Connections are mutual — no awkward open searches.`,
   },
   {
     step: "03",
@@ -60,46 +65,95 @@ export default function HomePage() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-border">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--accent-soft)_0%,_transparent_60%)] opacity-80"
-      />
-      <div className="relative mx-auto max-w-6xl px-6 py-24 sm:py-32">
-        <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3 py-1 text-xs font-medium text-muted backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+    <section className="relative overflow-hidden border-b border-border bg-subtle">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 py-20 sm:py-28 lg:grid-cols-[1.25fr_1fr]">
+        <div>
+          <p className="text-sm font-semibold text-accent-strong">
             For parents who are tired of the group text
-          </span>
-          <h1 className="mt-6 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Playdates that <span className="text-accent">actually happen</span>.
+          </p>
+          <h1 className="mt-5 font-display text-5xl font-extrabold leading-[0.95] tracking-[-0.035em] text-foreground sm:text-6xl lg:text-7xl">
+            Playdates that actually happen.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            Family Hub is a friendly little app for the parents in your kids&apos;
-            lives. Coordinate playdates, send party invites, share calendars,
-            and chat — without juggling four group threads and a paper RSVP.
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+            See when your kids&apos; friends are free, send the invite and get a
+            confirmed plan. {BRAND_NAME} keeps parties, pickups and playdates in
+            one place, so nobody has to dig through four group threads.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href="#get-the-app"
-              className="inline-flex items-center gap-2 rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-accent-hover"
+              className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-hover"
             >
               Get the app
               <ArrowRight className="h-4 w-4" />
             </a>
             <Link
               href="#features"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-white px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-subtle"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-foreground/30"
             >
               See what it does
             </Link>
           </div>
           <p className="mt-6 text-sm text-muted">
-            iOS and Android &middot; coming soon &middot; built by parents
+            Less planning. More playing. iOS and Android, coming soon.
           </p>
         </div>
+        <HeroVisual />
       </div>
     </section>
+  );
+}
+
+// Illustrative only: two families' free time on one day, overlapping where
+// the ball sits. It restates the mark's idea with fictional names.
+const heroRows = [
+  { family: "Your family", start: 8, end: 56, color: "bg-ink" },
+  { family: "The Parks", start: 39, end: 92, color: "bg-pool" },
+];
+
+function HeroVisual() {
+  return (
+    <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
+      <AppIcon className="absolute -top-10 -right-2 h-24 w-24 drop-shadow-xl sm:h-28 sm:w-28" />
+      <div className="rounded-3xl border border-border bg-white p-6 shadow-[0_24px_60px_-30px_rgba(21,35,63,0.35)]">
+        <p className="text-xs font-semibold uppercase tracking-wider text-muted">
+          Saturday
+        </p>
+        <p className="mt-1 font-display text-2xl font-extrabold tracking-tight text-foreground">
+          Who&apos;s free?
+        </p>
+        <div className="mt-6 space-y-5">
+          {heroRows.map((row) => (
+            <div key={row.family}>
+              <p className="text-sm font-medium text-foreground">
+                {row.family}
+              </p>
+              <div className="relative mt-2 h-4 rounded-full bg-subtle">
+                <span
+                  className={`absolute inset-y-0 rounded-full ${row.color}`}
+                  style={{ left: `${row.start}%`, right: `${100 - row.end}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-2 flex justify-between text-[11px] text-muted">
+          <span>9 am</span>
+          <span>12 pm</span>
+          <span>3 pm</span>
+          <span>6 pm</span>
+        </div>
+        <div className="mt-6 flex items-center gap-3 rounded-2xl bg-subtle p-4">
+          <span className="h-6 w-6 shrink-0 rounded-full bg-coral" />
+          <div>
+            <p className="text-sm font-semibold text-foreground">
+              Both free, 12:30 to 2 pm
+            </p>
+            <p className="text-xs text-muted">Send the invite in one tap</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -108,14 +162,14 @@ function Features() {
     <section id="features" className="border-b border-border bg-subtle">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
         <div className="max-w-2xl">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">
+          <h2 className="text-sm font-semibold text-accent-strong">
             What it does
           </h2>
-          <p className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <p className="mt-3 font-display text-3xl font-extrabold tracking-[-0.03em] text-foreground sm:text-4xl">
             The boring logistics, finally handled.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Family Hub does four things well, instead of trying to be every
+            {BRAND_NAME} does four things well, instead of trying to be every
             calendar and chat app at once. We built it for the parts of
             parenting we kept getting frustrated by ourselves.
           </p>
@@ -125,9 +179,11 @@ function Features() {
           {features.map((feature) => (
             <article
               key={feature.title}
-              className="group flex flex-col rounded-xl border border-border bg-white p-6 transition-colors hover:border-accent/40"
+              className="group flex flex-col rounded-2xl border border-border bg-white p-6 transition-colors hover:border-accent/50"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft text-accent">
+              <div
+                className={`flex h-11 w-11 items-center justify-center rounded-xl ${feature.tile}`}
+              >
                 <feature.icon className="h-5 w-5" />
               </div>
               <h3 className="mt-5 text-base font-semibold text-foreground">
@@ -149,14 +205,14 @@ function HowItWorks() {
     <section id="how-it-works" className="border-b border-border">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:py-24 lg:grid-cols-3">
         <div className="lg:col-span-1">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">
+          <h2 className="text-sm font-semibold text-accent-strong">
             How it works
           </h2>
-          <p className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <p className="mt-3 font-display text-3xl font-extrabold tracking-[-0.03em] text-foreground sm:text-4xl">
             Three small steps. No onboarding video required.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Family Hub is built to be useful within five minutes of installing
+            {BRAND_NAME} is built to be useful within five minutes of installing
             it. No feed, no algorithm — just the parents and kids you actually
             spend time with.
           </p>
@@ -165,9 +221,9 @@ function HowItWorks() {
           {howItWorks.map((step) => (
             <li
               key={step.step}
-              className="flex gap-5 rounded-xl border border-border bg-white p-6"
+              className="flex gap-5 rounded-2xl border border-border bg-white p-6"
             >
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-sm font-semibold text-accent">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent-soft font-display text-sm font-extrabold text-accent-strong">
                 {step.step}
               </span>
               <div>
@@ -192,10 +248,10 @@ function GetTheApp() {
       <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">
+            <h2 className="text-sm font-semibold text-accent-strong">
               Get the app
             </h2>
-            <p className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+            <p className="mt-3 font-display text-3xl font-extrabold tracking-[-0.03em] text-foreground sm:text-4xl">
               Coming soon to iOS and Android.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted">
@@ -207,7 +263,7 @@ function GetTheApp() {
               Questions in the meantime?{" "}
               <a
                 href="mailto:support@play-cal.com"
-                className="font-medium text-accent underline-offset-4 hover:underline"
+                className="font-medium text-accent-strong underline-offset-4 hover:underline"
               >
                 support@play-cal.com
               </a>
@@ -215,7 +271,7 @@ function GetTheApp() {
             </p>
           </div>
 
-          <div className="rounded-xl border border-border bg-white p-8">
+          <div className="rounded-2xl border border-border bg-white p-8">
             <div className="flex flex-col gap-3">
               <StorePlaceholder
                 store="App Store"
@@ -259,7 +315,7 @@ function StorePlaceholder({
     <span
       role="link"
       aria-disabled="true"
-      className="flex items-center gap-3 rounded-lg border border-border bg-foreground/95 px-4 py-3 text-white opacity-90 cursor-not-allowed select-none"
+      className="flex items-center gap-3 rounded-xl bg-ink px-4 py-3 text-white opacity-90 cursor-not-allowed select-none"
       title={`${store} — coming soon`}
     >
       <span className="text-white/95">{icon}</span>
